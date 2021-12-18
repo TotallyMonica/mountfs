@@ -1,1 +1,9 @@
-/etc/systemd/system/mountfs.service
+[Unit]
+Description=Mount cifs share based on ip
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/monica/Projects/personal/mountfs/mountfs.py
+
+[Install]
+WantedBy=multi-user.target
