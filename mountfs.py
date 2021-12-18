@@ -12,8 +12,10 @@ def mount(path_to_smb, path_to_local_dir):
 localIP = socket.gethostbyname(socket.gethostname())
 
 if("10.0.0." in localIP):
+    #Usage: mount('remote directory', 'local directory')
     mount('//10.0.0.6/Plex', '/mnt/Plex')
     mount('//10.0.0.6/monica', '/mnt/home')
 elif("192.168.68." in localIP):
+    #Usage: mount('remote directory', 'local directory')
     mount('//192.168.68.11/Games', '/mnt/Games')
     mount('//192.168.68.11/monica', '/mnt/home')
