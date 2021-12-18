@@ -1,5 +1,8 @@
 # mountfs
 
+## Descripton
+An easy-to-use Python script to mount network shares based off of your current local IP
+
 ## How to set up:
 1. `git clone https://github.com/TotallyMonica/mountfs && cd mountfs`
 2. Open mountfs.py in your favorite text editor (I personally use `nano`, but to each their own) and modify lines 14 and 17 to fit the relevant IPs
@@ -13,3 +16,10 @@
 ## Prerequisites
  - Python3
 
+## To-do list
+ - Create script to easily set this up, possibly for a release?
+ - NFS support
+ - sshfs support
+ - Other network file system supports
+ - Support for other daemons
+ - (To avoid Python bashing) write it in other languages (top priority, bash)
